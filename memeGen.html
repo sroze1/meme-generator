@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="memeGen.js"></script>
+  </head>
+
+  <body>
+    <h1>MEME GENERATOR</h1>
+
+    <form
+      id="meme-form"
+      class="meme-form"
+      method="GET"
+      action="display-meme.html"
+    >
+      <h3>PLEASE ENTER SOME TEXT</h3>
+      <label for="top-text">Enter Top Text</label>
+      <input type="text" id="top-text" name="top-text" required />
+
+      <label for="bottom-text">Enter Bottom Text</label>
+      <input type="text" id="bottom-text" name="bottom-text" required />
+
+      <label for="url">Enter Link to the Image</label>
+      <input type="text" id="url" name="url" required />
+      <button input="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
+
+<!-- Fields to collect from your user:
+
+| Field        | Restrictions      |
+| ------------ | ----------------- |
+| Top Text     | Max 50 characters |
+| Bottom Text  | Max 50 characters |
+| Image Choice | Required          | -->
