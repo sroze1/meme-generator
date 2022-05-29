@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="memeGen.js" defer></script>
   </head>
 
   <body>
-    <h1>MEME GENERATOR</h1>
-
-    <form
+    <!-- <form
       id="meme-form"
       class="meme-form"
       method="GET"
@@ -29,7 +33,121 @@
       <input type="text" id="url" name="url" required />
       <button input="submit">SUBMIT</button>
       <p id="error-message"></p>
-    </form>
+    </form> -->
+    <!-- component -->
+    <body class="font-mono bg-gray-400">
+      <!-- Container -->
+      <div class="container mx-auto">
+        <div class="flex justify-center px-6 my-12">
+          <!-- Row -->
+          <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+            <!-- Col -->
+            <div
+              class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1515536765-9b2a70c4b333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+              "
+            ></div>
+            <!-- Col -->
+            <div
+              class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none"
+            >
+              <div class="px-8 mb-4 text-center">
+                <h3 class="pt-4 mb-2 text-2xl">
+                  THE OFFICIAL WORLD'S SIMPLEST MEME GENERATOR
+                </h3>
+                <p class="mb-4 mt-8 text-sm text-gray-700">
+                  Meme creation should be kept simple, we agree. The old school
+                  meme format, also known as 'OG Memes'. Happy Meme-ing.
+                </p>
+              </div>
+              <form
+                class="px-8 pt-6 pb-8 mb-4 bg-white rounded"
+                id="meme-form"
+                method="GET"
+                action="display-meme.html"
+              >
+                <div class="mb-4">
+                  <div>
+                    <label
+                      class="block mb-2 text-sm font-bold text-gray-700"
+                      for="email"
+                    >
+                      Top Text
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      type="text"
+                      id="top-text"
+                      name="top-text"
+                      required
+                      placeholder="Enter top text..."
+                    />
+                  </div>
+                  <div class="pt-4">
+                    <label
+                      class="block mb-2 text-sm font-bold text-gray-700"
+                      for="bottom-text"
+                    >
+                      Bottom Text
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      type="text"
+                      id="bottom-text"
+                      name="bottom-text"
+                      required
+                      placeholder="Enter bottom text..."
+                    />
+                  </div>
+                  <div class="pt-4">
+                    <label
+                      class="block mb-2 text-sm font-bold text-gray-700"
+                      for="url"
+                    >
+                      URL
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      type="text"
+                      id="url"
+                      name="url"
+                      required
+                      placeholder="Enter link to image..."
+                    />
+                  </div>
+                </div>
+                <div class="mb-6 text-center">
+                  <button
+                    class="w-full px-4 py-2 font-bold text-white bg-red-500 rounded-full hover:bg-red-700 focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+                <hr class="mb-6 border-t" />
+                <div class="text-center">
+                  <p>Creators:</p>
+
+                  <a
+                    href="https://github.com/nickWoott"
+                    class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                    >Nick Wootton</a
+                  >
+                  <br />
+
+                  <a
+                    href="https://github.com/sroze1"
+                    class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                    >Mohammad Sheroze</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
   </body>
 </html>
 
