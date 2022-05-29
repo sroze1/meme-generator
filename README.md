@@ -1,4 +1,4 @@
-**Welcome to the world's simplest Meme Generator. **
+**Welcome to the world's simplest Meme Generator.**
 
 Guide:
 - Enter top text
